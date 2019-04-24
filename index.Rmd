@@ -1,0 +1,861 @@
+---
+title: "The Frontier Within"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+bib: references.bib
+output:
+  revealjs::revealjs_presentation:
+    css: styles.css
+    self_contained: false
+    lib_dir: libs
+    incremental: false
+    theme: simple
+    transition: none
+    reveal_plugins: ["notes", "zoom"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: false
+      center: true
+      touch: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(ggplot2)
+```
+
+# Prelude
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/JB7jSFeVz1U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<!-- Ode to the Brain -->
+
+# Preliminaries
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=150px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=150px>
+</br>
+<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=150px>
+<img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/>
+<img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px />
+</br>
+<img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=150px/>
+<img src="http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" height=150px/>
+
+<!-- Funding sources with icons -->
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/>
+<img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/>
+<img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/>
+<img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/>
+<img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/>
+<img src="img/sleic.jpg" height=150px/></br>
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
+
+# The Frontier Within
+
+## Core questions for science
+
+>1. How did the Universe begin?
+>2. What is the origin of life?
+>3. What is the nature of mind?
+
+---
+
+<div class="centered">
+<img src="img/psychology-definition.jpg"
+</div>
+
+## Psychology is harder than physics
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/sips-2017-databservatory/master/img/psych-harder-1.jpg" height=600px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/gilmore-lab/sips-2017-databservatory/master/img/psych-harder-2.jpg" height=600px/>
+</div>
+
+## Why is it so hard?
+
+---
+
+<div class="centered">
+<img src="http://3.bp.blogspot.com/-3e_SbLI1Kbc/UkH085O8q5I/AAAAAAAACw4/lAZ_AJdzGss/s1600/bronfenbrenner.jpeg" height=600px>
+</div>
+
+---
+
+<div class="centered">
+<img src="https://www.researchgate.net/profile/Carlo_Miniussi/publication/269877702/figure/fig2/AS:269128527249411@1441176649721/Hierarchical-modular-organisation-of-the-human-connectome-a-Hubs-regions-with-a.png" height=600px>
+</div>
+
+---
+
+<div class="centered">
+<img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=500px/>
+</div>
+<!-- Blind men and the elephant -->
+
+---
+
+<div class="centered">
+<img src="https://www.pennlive.com/resizer/PgI7JQbF2d92Tc-lRiOgYpEzhoM=/600x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/E5M2XUSKIRHTJCGR4FYTI2ZHNU.JPG" height=600px/>
+</div>
+
+<!-- Birds eye view -->
+
+# What must the nervous system do?
+
+---
+
+<img src="img/powers-5.2.png" height=500px/>
+
+<small>Powers 1973</small>
+
+## Control internal states
+
+<div class="centered">
+<img src="https://i.ytimg.com/vi/kAy-03hIfck/maxresdefault.jpg" height=550px/>
+</div>
+
+<!-- Bart Simpson negative feedback loops -->
+
+## Control external states (behavior)
+
+<img src="https://i.ebayimg.com/images/g/d44AAOxygPtSvdPG/s-l1600.jpg"/>
+
+<!-- Preserve, protect, defend... -->
+
+---
+
+<img src="https://www.twotwentyone.net/wp-content/uploads/2013/11/eat-drink-merry-multicolor-8x10.jpg"/ height=600px>
+
+<!-- Eat, drink, & be merry... -->
+
+## Be fruitful & multiply...
+
+---
+
+<img src="https://i7.photobucket.com/albums/y288/daveclark85/Reverend%20Fun%20Pics/RevFunAdamMultiplies.gif" height=600px/>
+
+<!-- Be fruitful & multiply... -->
+
+---
+
+- Defense
+- Ingestion
+- Reproduction
+
+## What *specific* behaviors?
+
+---
+
+- Perception (what is it/where is it?)
+- Locomotion
+- Object manipulation/consumption
+- Signaling/communication
+
+## How is the nervous system organized to shape these behaviors?
+
+---
+
+<div class="centered">
+<a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" width=950px>
+</a>
+
+<small>[Swanson 2005](http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://larrywswanson.com/wp-content/uploads/2015/06/Willis-on-Steno-circuit.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Willis-on-Steno-circuit.jpg" height=550px>
+</a>
+
+<small>[Swanson 2005](http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg" height=600px>
+</a>
+</div>
+
+## Perception -> Cognition -> Action
+
+---
+
+- What's out there?
+- Where is it?
+- How am I feeling now?
+- What happened in the past?
+- ...
+- What should I do about it?
+
+---
+
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1364661304000476-gr2.gif" height=550px/>
+
+<small>[Fuster 2004](http://doi.org/10.1016/j.tics.2004.02.004)</small>
+
+---
+
+## Spatial & temporal scales
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg">
+<img src="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg" height="600px">
+</a>
+
+<small>[Sejnowski 2014](http://doi.org/10.1038/nn.3839)</small>
+</div>
+
+---
+
+> "*If understanding everything you needed to know about the brain is a mile, how far have we walked?*"
+
+---
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<small>J. Lichtman</small>
+<!-- <https://www.youtube.com/watch?v=nvXuq9jRWKE&feature=youtu.be> -->
+
+# Inching along...
+
+---
+
+<img src="https://d.ibtimes.co.uk/en/full/396102/mummified-body-woman-representative-purposes.jpg?w=630&e=95f85be8612d0edda8a9a74a906d83e9" height=600px/>
+
+<!-- Egyptian mummy -->
+
+## The mind as machine...
+
+---
+
+<div class="centered">
+<a href="http://www.unmuseum.org/notescurator/automata_duck.jpg">
+<img src="http://www.unmuseum.org/notescurator/automata_duck.jpg" height=500px/>
+</a>
+
+<!-- Automata -->
+
+---
+
+<img src="http://larrywswanson.com/wp-content/uploads/2015/06/Descartes-1662.jpg" height=550px/>
+
+<small>Descartes 1662</small>
+
+---
+
+<img src="https://c1.staticflickr.com/4/3613/3660047829_7e26b20599_b.jpg" height=600px/>
+
+<!-- Switchboard -->
+
+---
+
+<div class="centered">
+<img src="https://assets.pcmag.com/media/images/464251-nest-thermostat-e.jpg?width=810&height=456" height=500px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/powers-6.1.png" height=500px/>
+</div>
+
+<small>Powers 1973</small>
+<!-- Thermostat/feedback system -->
+
+---
+
+<img src="https://callnerds.com/wp-content/uploads/basic-computer-parts-01.svg" height=600px/>
+
+<!-- Computer -->
+
+---
+
+<img src="https://www.androidcentral.com/sites/androidcentral.com/files/topic_images/2014/Cell-Phone-Plans-topic-page-graphic.png" height=600px/>
+
+<!-- Cell phone -->
+
+---
+
+<img src="img/submarine-cable-map.jpg" height=600px/>
+
+<small><https://www.submarinecablemap.com/></small>
+
+---
+
+- Inputs & outputs
+- Connectivity & communication
+- Information processing & computation
+- Functionally specialized components
+
+# Learning some of the parts
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/snO68aJTOpM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Brain anatomy through dance
+
+<div class="centered">
+<audio controls>
+  <source src="snd/brain_boxing-2.m4a">
+</audio>
+</div>
+
+## Finding our way around
+
+### **Anterior/Posterior**
+### **Medial/Lateral**
+### **Superior/Inferior**
+### **Dorsal/Ventral**
+### **Rostral/Caudal**
+
+---
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blausen_0019_AnatomicalDirectionalReferences.png/800px-Blausen_0019_AnatomicalDirectionalReferences.png" height="580px">
+
+<!-- <https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blausen_0019_AnatomicalDirectionalReferences.png/800px-Blausen_0019_AnatomicalDirectionalReferences.png> -->
+</div>
+
+## The parts have special functions
+
+## The "4 Fs"
+
+- Fighting
+- Fleeing
+- Feeding
+- Mating
+
+---
+
+<img src="https://d2gne97vdumgn3.cloudfront.net/api/file/mBcO4PfRMWiAPKuQGXDA" height=600px/>
+
+<!-- Hypothalamus -->
+
+# Nuts & bolts...
+
+## Cells of the nervous system
+
+## Glial ("glue") cells
+
+<div class="centered">
+<a href="https://upload.wikimedia.org/wikipedia/commons/5/56/Human_astrocyte.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Human_astrocyte.png" height=500px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Oligodendendrocytes_in_rat_brain.tif/lossy-page1-800px-Oligodendendrocytes_in_rat_brain.tif.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Oligodendendrocytes_in_rat_brain.tif/lossy-page1-800px-Oligodendendrocytes_in_rat_brain.tif.jpg" height=600px>
+</a>
+</div>
+
+## Neurons
+
+<div class="centered">
+<a href="http://www.extremetech.com/wp-content/uploads/2012/03/a-mouse-hippocampus-640x353.jpg">
+<img src="http://www.extremetech.com/wp-content/uploads/2012/03/a-mouse-hippocampus-640x353.jpg" height=550px/>
+</a>
+</div>
+
+<!-- Mouse hippocampus -->
+
+---
+
+<div class="centered">
+<img src="https://static.scientificamerican.com/sciam/cache/file/52B19135-A87E-4900-8787C55A19925989_source.jpg?w=590&h=800&4482D8A9-1F12-45E6-8466C64DBDD4C9C3" height=550px>
+</a>
+</div>
+
+<small>[Shen 2015](https://www.scientificamerican.com/article/does-the-adult-brain-really-grow-new-neurons/)</small>
+
+---
+
+<img src="http://east.zornitsadesign.netdna-cdn.com/wp-content/uploads/2016/03/Brainbow-Hippocampus-rainbow-colors-large.jpg" height=550px/>
+
+[Greg Dunn Designs](http://www.gregadunn.com)
+
+## Fun facts about [neurons](https://en.wikipedia.org/wiki/Neuron)
+
+- Most [born early in life](http://www.ninds.nih.gov/disorders/brain_basics/ninds_neuron.htm)
+- Post-mitotic -- don't divide
+- Among longest-lived cells in body
+
+---
+
+- Can extend over long distances
+- Specialized for electrical & chemical communication
+
+---
+
+<div class="centered">
+<img src="https://i.stack.imgur.com/kfriB.jpg" height=450px/>
+</div>
+
+<!-- Schematic neuron showing information flow -->
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/H0K2dvB-7WY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Neurons release neurotransmitters
+
+---
+
+<div class="centered">
+<img src="https://www.proprofs.com/quiz-school/topic_images/p1bsmqh6un6sdfto1f8m1184nr83.jpg" height=450px/>
+</div>
+
+## Monoamine Song
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gsjcb7w1Y-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<small><https://www.youtube.com/watch?v=gsjcb7w1Y-w></small>
+<small><https://en.wikipedia.org/wiki/Mah_Nà_Mah_Nà></small>
+
+---
+
+￼Monoamines, do-do do do-do</br>
+Monoamines, do do do-do</br>
+Monoamines, do do do do-do do do-do do do-do do do do do-do do
+
+---
+
+￼Monoamines, do-pa-mine is one</br>
+Monoamines, norepi, too</br>
+Monoamines, sero-tonin e-pinephrine, dop-a- mine, nor-epinephrine, melatonin, whoo!
+
+---
+
+Monoamines, mod-u-late neurons </br>
+Monoamines, throughout the brain</br>
+Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do do-do do
+
+---
+
+- Nicotine
+- Alcohol
+- Valium
+- Prozac
+- Opioids
+- Marijuana
+
+## Substances of use and abuse often mimic or alter neurotransmitters
+
+# How did it get here?
+
+---
+
+<div class="centered">
+<img src="https://cdn.spacetelescope.org/archives/images/large/heic0916a.jpg" height=600px>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif">
+<img src="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif" height=600px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif">
+<img src="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif" height=600px>
+</a>
+</div>
+
+## The Cambrian explosion
+
+<img src="https://www.nature.com/polopoly_fs/7.34097.1455557253!/image/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg_gen/derivatives/landscape_630/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg" height=500px/>
+
+## Behavior requires...
+
+- Energy
+- Perception at a distance
+- Action
+
+## Action requires...
+
+- Perception
+- Problem solving
+- Sequence planning
+- Current state + stored information (memory)
+
+## Evolving brains
+
+---
+
+<div class="centered">
+<img src="img/nrn.2015.15-f1.jpg" height=550px>
+
+<small>[Arendt 2016](http://doi.org/10.1038/nrn.2015.15)</small>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/nrn.2015.15-f2.jpg" height=550px>
+
+<small>[Arendt 2016](http://doi.org/10.1038/nrn.2015.15)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://icb.oxfordjournals.org/content/42/4/743/F2.large.jpg">
+<img src="img/northcutt-2002-f1.gif" height=550px>
+</a>
+
+<small>(Northcutt 2002)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://icb.oxfordjournals.org/content/42/4/743/F2.large.jpg">
+<img src="img/northcutt-2002-f2.gif" height=550px>
+</a>
+
+<small>(Northcutt 2002)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg">
+<img src="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg" height=600px>
+</a>
+</div>
+
+## Does size matter? 
+
+---
+
+<img src="http://s3v.computerhistory.org/102695698-03-01.jpg?" height=300px>
+<img src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-462x322.jpg" height=300px>
+
+---
+
+| Species | # cortical neurons | cortical mass (g) |
+|---------|--------------------|-------------------|
+| Human   | 16 B               | 1233              |
+| Chimpanzee | 6 B             | 286               |
+| Elephant | 5.6 B             | 2800              |
+| Baboon | 2.9 B               | 120.2             |
+
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+brain <- data.frame(species = c('human', 'chimpanzee', 'elephant', 'baboon'),
+                    neurons = c(16, 6, 5.6, 2.9),
+                    mass = c(1233, 286, 2800, 120.2))
+
+brain %>% 
+  ggplot(.) +
+  aes(x = neurons, y = mass, color = species) +
+  geom_point(size = 4) +
+  xlab("Billions of cortical neurons") +
+  ylab("Mass (g)")
+  theme(axis.text = element_text(size = 24),
+        legend.text = element_text(size = 24),
+        legend.title = element_text(size = 24),
+        axis.title = element_text(size = 36))
+```
+
+---
+
+> "*...our brain outranks that of other animals not because we are an exception in evolution, but rather because...we hold the largest number of neurons in the cerebral cortex...*"
+
+<small>Herculano-Houtzel 2016</small>
+
+---
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/41FcpskAqFL._SX331_BO1,204,203,200_.jpg" height=600px/>
+
+## Developing brains
+
+---
+
+<!-- ## Neurulation -->
+
+<div class="centered">
+<a href="http://thebrain.mcgill.ca/flash/i/i_09/i_09_cr/i_09_cr_dev/i_09_cr_dev_2a.jpg">
+<img src="http://thebrain.mcgill.ca/flash/i/i_09/i_09_cr/i_09_cr_dev/i_09_cr_dev_2a.jpg" height=550px>
+</a>
+</div>
+
+---
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Spina-bifida.jpg#/media/File:Spina-bifida.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Spina-bifida.jpg/1200px-Spina-bifida.jpg" alt="Spina-bifida.jpg" height=600px></a></p>
+
+<!-- Spina bifida -->
+
+---
+
+<div class="centered">
+<a href="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/radial-glia.jpg">
+<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/radial-glia.jpg" height=550px>
+</a>
+</div>
+
+<!-- Migration from ventricular zone -->
+
+---
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/ZRF-gKZHINk" frameborder="0" allowfullscreen></iframe>
+
+---
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/t-8bxeWqSV4" frameborder="0" allowfullscreen></iframe>
+
+---
+
+<!-- ## Axon growth cone -->
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/Fgmt2RBow0I" frameborder="0" allowfullscreen></iframe>
+
+---
+
+
+<div class="centered">
+<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/synaptic-density-infant.jpg" height=550px>
+</div>
+
+<!-- ## Synaptogenesis -->
+
+---
+
+<div class="centered">
+<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/huttenlocher.jpg" height=550px>
+</div>
+
+<!-- ## Postnatal patterns of synaptogenesis -->
+
+---
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/atLQVgUwnrY" frameborder="0" allowfullscreen></iframe>
+
+<!-- Myelination/DTI -->
+
+---
+
+<div class="centered">
+<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" height=450px>
+
+<small>[Baumann 200](http://dx.doi.org/10.1152/physrev.2001.81.2.871)</small>
+</div>
+
+<!-- Myelination patterns -->
+
+---
+
+- Extended post-natal development
+- Proliferation then pruning
+
+---
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/51k3f40g1cL._SX343_BO1,204,203,200_.jpg" height=600px/>
+
+<!-- The Evolution of Childhood -->
+
+# Where is neuroscience going?
+
+---
+
+<div class="centered">
+<img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=580px>
+</br>
+<small>
+[Baker 2016](http://doi.org/10.1038/533452a)
+</small>
+</div>
+
+<div class="notes">
+Nature conducted a survey of some 1,600 scientists in 2016. They were asked this question and a few others. Here are the results.
+</div>
+
+---
+
+<div class="centered">
+<img src="https://cdn.shopify.com/s/files/1/0877/5762/products/Rigor_Mortis_1024x1024.jpg?v=1491240110" height=550px/>
+</div>
+
+---
+
+<div class="centered">
+<img src="http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" height=500px>
+
+<small>[Szucs & Ioannides 2017](http://doi.org/10.1371/journal.pbio.2000797)</small>
+</div>
+
+<div class="notes">
+As Szucs and Ioannides have shown based on an analysis of more than 10,000 papers in the cognitive neuroscience literature, sample sizes are small, and the probability of false negatives is high, especially for small to medium effect sizes.
+</div>
+
+---
+
+<div class="centered">
+> "Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature."
+
+<small>[Szucs & Ioannides 2017](http://doi.org/10.1371/journal.pbio.2000797)</small>
+</div>
+
+<div class="notes">
+So, this means that we may not know what we think we know.
+</div>
+
+## On the other hand...
+
+<img src="img/gilmore-diaz-wyble-yarkoni.jpg" height=500px/>
+
+---
+
+<img src="img/openneuro.jpg" height=550px/>
+
+<http://openneuro.org>
+
+---
+
+<video width="1000" data-autoplay>
+  <source src="mov/neurosynth-happy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+<http://neurosynth.org>
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/zKyO_AB7aMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<http://humanconnectome.org>
+
+---
+
+<img src="img/sleic.jpg" height=500px/>
+
+[imaging.psu.edu](http://imaging.psu.edu)
+
+---
+
+<iframe width="850" height="500" src="https://www.youtube.com/embed/og_1dZc1i_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<!-- CLARITY technique -->
+
+---
+
+<iframe width="850" height="500" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<!-- Optogenetics -->
+
+---
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/KDjWdtDyz5I" frameborder="0" allowfullscreen></iframe>
+
+<div class="notes">
+Effects of DBS for Parkinson's.
+</div>
+
+---
+
+<img src="http://cs231n.github.io/assets/cnn/convnet.jpeg"/>
+
+<!-- Convolutional neural networks -->
+
+---
+
+<img src="https://www.nature.com/polopoly_fs/7.30313.1444731856!/image/Gut-Brain.jpg_gen/derivatives/landscape_630/Gut-Brain.jpg" height=580px/>
+
+<!-- Gut brain/connection -->
+
+# The frontier within...
+
+---
+
+<div class="centered">
+<a href="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg">
+<img src="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg" height="580px">
+</a>
+
+<small>[Sejnowski 2014](http://doi.org/10.1038/nn.3839)</small>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" width=950px>
+</a>
+
+<small>[Swanson 2005](http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg)</small>
+</div>
+
+---
+
+<div class="centered">
+<img src="img/krakauer.jpg" height=600px/>
+</div>
+
+<small>Krakauer 2017</small>
+
+---
+
+>"*Behavior is the linchpin of the most vexing problems in public health, and a better understanding of behavior is fundamental to achieving positive health outcomes, from prenatal development throughout adulthood.*"
+
+<small>Gilmore, Adolph, & Tamis-LeMonda, 2019</small>
+
+---
+
+<div class="centered">
+<a href="http://www.apa.org/science/about/psa/2017/10/video-data.aspx">
+<img src="img/video-as-data-doc.jpg" height=600px/>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<video width="700" data-autoplay>
+  <source src="https://nyu.databrary.org/slot/27087/0,79000/asset/119877/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+$n=900$ 12-, 18-, 24-mo-olds; $n=30$ sites
+
+## A human behavior-ome
+
+<video height="600" controls data-autoplay>
+  <source src="mov/Construction.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<small>*Source*: Ori Ossmy (NYU)</small>
+
+---
+
+<img src="img/nested-causality.png" height=400px/>
+
+rogilmore@psu.edu</br>
+<https://gilmore-lab.github.io>

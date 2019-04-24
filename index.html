@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Rick O. Gilmore" />
+  <title>The Frontier Within</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">The Frontier Within</h1>
+    <h2 class="author">Rick O. Gilmore</h2>
+    <h3 class="date">2019-04-24 09:09:52</h3>
+</section>
+
+<section><section id="prelude" class="titleslide slide level1"><h1>Prelude</h1></section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/JB7jSFeVz1U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<!-- Ode to the Brain -->
+</section></section>
+<section><section id="preliminaries" class="titleslide slide level1"><h1>Preliminaries</h1></section><section class="slide level2">
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=150px> <img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=150px> </br> <img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height=150px> <img src="http://newsroom.unl.edu/announce/files/file77330.jpg" height=150px/> <img src="https://www.unicef.org.hk/wp-content/uploads/2017/08/Logo-05_Lego-foundation_UNICEF_partnership.jpg" height=150px /> </br> <img src="https://nationalpress.org/wp-content/uploads/2016/04/NIDA-logo-300x300.jpg" height=150px/> <img src="http://bewellva.com/wp-content/uploads/2017/12/NIMH-Logo_14-e1510955490255.jpg" height=150px/></p>
+<!-- Funding sources with icons -->
+</section><section class="slide level2">
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/> <img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/> <img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/> <img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/> <img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/> <img src="img/sleic.jpg" height=150px/></br> <img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px></p>
+</section></section>
+<section><section id="the-frontier-within" class="titleslide slide level1"><h1>The Frontier Within</h1></section><section id="core-questions-for-science" class="slide level2">
+<h2>Core questions for science</h2>
+<ol type="1">
+<li class="fragment">How did the Universe begin?</li>
+<li class="fragment">What is the origin of life?</li>
+<li class="fragment">What is the nature of mind?</li>
+</ol>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="img/psychology-definition.jpg"
+</div></p>
+</section><section id="psychology-is-harder-than-physics" class="slide level2">
+<h2>Psychology is harder than physics</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://raw.githubusercontent.com/gilmore-lab/sips-2017-databservatory/master/img/psych-harder-1.jpg" height=600px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://raw.githubusercontent.com/gilmore-lab/sips-2017-databservatory/master/img/psych-harder-2.jpg" height=600px/></p>
+</div>
+</section><section id="why-is-it-so-hard" class="slide level2">
+<h2>Why is it so hard?</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://3.bp.blogspot.com/-3e_SbLI1Kbc/UkH085O8q5I/AAAAAAAACw4/lAZ_AJdzGss/s1600/bronfenbrenner.jpeg" height=600px></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://www.researchgate.net/profile/Carlo_Miniussi/publication/269877702/figure/fig2/AS:269128527249411@1441176649721/Hierarchical-modular-organisation-of-the-human-connectome-a-Hubs-regions-with-a.png" height=600px></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg" height=500px/></p>
+</div>
+<!-- Blind men and the elephant -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://www.pennlive.com/resizer/PgI7JQbF2d92Tc-lRiOgYpEzhoM=/600x0/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/E5M2XUSKIRHTJCGR4FYTI2ZHNU.JPG" height=600px/></p>
+</div>
+<!-- Birds eye view -->
+</section></section>
+<section><section id="what-must-the-nervous-system-do" class="titleslide slide level1"><h1>What must the nervous system do?</h1></section><section class="slide level2">
+
+<p><img src="img/powers-5.2.png" height=500px/></p>
+<p><small>Powers 1973</small></p>
+</section><section id="control-internal-states" class="slide level2">
+<h2>Control internal states</h2>
+<div class="centered">
+<p><img src="https://i.ytimg.com/vi/kAy-03hIfck/maxresdefault.jpg" height=550px/></p>
+</div>
+<!-- Bart Simpson negative feedback loops -->
+</section><section id="control-external-states-behavior" class="slide level2">
+<h2>Control external states (behavior)</h2>
+<p><img src="https://i.ebayimg.com/images/g/d44AAOxygPtSvdPG/s-l1600.jpg"/></p>
+<!-- Preserve, protect, defend... -->
+</section><section class="slide level2">
+
+<p><img src="https://www.twotwentyone.net/wp-content/uploads/2013/11/eat-drink-merry-multicolor-8x10.jpg"/ height=600px></p>
+<!-- Eat, drink, & be merry... -->
+</section><section id="be-fruitful-multiply" class="slide level2">
+<h2>Be fruitful &amp; multiply…</h2>
+</section><section class="slide level2">
+
+<p><img src="https://i7.photobucket.com/albums/y288/daveclark85/Reverend%20Fun%20Pics/RevFunAdamMultiplies.gif" height=600px/></p>
+<!-- Be fruitful & multiply... -->
+</section><section class="slide level2">
+
+<ul>
+<li>Defense</li>
+<li>Ingestion</li>
+<li>Reproduction</li>
+</ul>
+</section><section id="what-specific-behaviors" class="slide level2">
+<h2>What <em>specific</em> behaviors?</h2>
+</section><section class="slide level2">
+
+<ul>
+<li>Perception (what is it/where is it?)</li>
+<li>Locomotion</li>
+<li>Object manipulation/consumption</li>
+<li>Signaling/communication</li>
+</ul>
+</section><section id="how-is-the-nervous-system-organized-to-shape-these-behaviors" class="slide level2">
+<h2>How is the nervous system organized to shape these behaviors?</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" width=950px> </a></p>
+<p><small><a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg">Swanson 2005</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://larrywswanson.com/wp-content/uploads/2015/06/Willis-on-Steno-circuit.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Willis-on-Steno-circuit.jpg" height=550px> </a></p>
+<p><small><a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg">Swanson 2005</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg" height=600px> </a></p>
+</div>
+</section><section id="perception---cognition---action" class="slide level2">
+<h2>Perception -&gt; Cognition -&gt; Action</h2>
+</section><section class="slide level2">
+
+<ul>
+<li>What’s out there?</li>
+<li>Where is it?</li>
+<li>How am I feeling now?</li>
+<li>What happened in the past?</li>
+<li>…</li>
+<li>What should I do about it?</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S1364661304000476-gr2.gif" height=550px/></p>
+<p><small><a href="http://doi.org/10.1016/j.tics.2004.02.004">Fuster 2004</a></small></p>
+</section><section id="spatial-temporal-scales" class="slide level2">
+<h2>Spatial &amp; temporal scales</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg"> <img src="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg" height="600px"> </a></p>
+<p><small><a href="http://doi.org/10.1038/nn.3839">Sejnowski 2014</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>If understanding everything you needed to know about the brain is a mile, how far have we walked?</em>”</p>
+</blockquote>
+</section><section class="slide level2">
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<p><small>J. Lichtman</small> <!-- <https://www.youtube.com/watch?v=nvXuq9jRWKE&feature=youtu.be> --></p>
+</section></section>
+<section><section id="inching-along" class="titleslide slide level1"><h1>Inching along…</h1></section><section class="slide level2">
+
+<p><img src="https://d.ibtimes.co.uk/en/full/396102/mummified-body-woman-representative-purposes.jpg?w=630&e=95f85be8612d0edda8a9a74a906d83e9" height=600px/></p>
+<!-- Egyptian mummy -->
+</section><section id="the-mind-as-machine" class="slide level2">
+<h2>The mind as machine…</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.unmuseum.org/notescurator/automata_duck.jpg"> <img src="http://www.unmuseum.org/notescurator/automata_duck.jpg" height=500px/> </a></p>
+<!-- Automata -->
+</section><section class="slide level2">
+
+<p><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Descartes-1662.jpg" height=550px/></p>
+<p><small>Descartes 1662</small></p>
+</section><section class="slide level2">
+
+<p><img src="https://c1.staticflickr.com/4/3613/3660047829_7e26b20599_b.jpg" height=600px/></p>
+<!-- Switchboard -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://assets.pcmag.com/media/images/464251-nest-thermostat-e.jpg?width=810&height=456" height=500px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="img/powers-6.1.png" height=500px/></p>
+</div>
+<p><small>Powers 1973</small> <!-- Thermostat/feedback system --></p>
+</section><section class="slide level2">
+
+<p><img src="https://callnerds.com/wp-content/uploads/basic-computer-parts-01.svg" height=600px/></p>
+<!-- Computer -->
+</section><section class="slide level2">
+
+<p><img src="https://www.androidcentral.com/sites/androidcentral.com/files/topic_images/2014/Cell-Phone-Plans-topic-page-graphic.png" height=600px/></p>
+<!-- Cell phone -->
+</section><section class="slide level2">
+
+<p><img src="img/submarine-cable-map.jpg" height=600px/></p>
+<p><small><a href="https://www.submarinecablemap.com/" class="uri">https://www.submarinecablemap.com/</a></small></p>
+</section><section class="slide level2">
+
+<ul>
+<li>Inputs &amp; outputs</li>
+<li>Connectivity &amp; communication</li>
+<li>Information processing &amp; computation</li>
+<li>Functionally specialized components</li>
+</ul>
+</section></section>
+<section><section id="learning-some-of-the-parts" class="titleslide slide level1"><h1>Learning some of the parts</h1></section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/snO68aJTOpM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</section><section id="brain-anatomy-through-dance" class="slide level2">
+<h2>Brain anatomy through dance</h2>
+<div class="centered">
+<audio controls>
+<source src="snd/brain_boxing-2.m4a">
+</audio>
+</div>
+</section><section id="finding-our-way-around" class="slide level2">
+<h2>Finding our way around</h2>
+<h3 id="anteriorposterior"><strong>Anterior/Posterior</strong></h3>
+<h3 id="mediallateral"><strong>Medial/Lateral</strong></h3>
+<h3 id="superiorinferior"><strong>Superior/Inferior</strong></h3>
+<h3 id="dorsalventral"><strong>Dorsal/Ventral</strong></h3>
+<h3 id="rostralcaudal"><strong>Rostral/Caudal</strong></h3>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blausen_0019_AnatomicalDirectionalReferences.png/800px-Blausen_0019_AnatomicalDirectionalReferences.png" height="580px"></p>
+<!-- <https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blausen_0019_AnatomicalDirectionalReferences.png/800px-Blausen_0019_AnatomicalDirectionalReferences.png> -->
+</div>
+</section><section id="the-parts-have-special-functions" class="slide level2">
+<h2>The parts have special functions</h2>
+</section><section id="the-4-fs" class="slide level2">
+<h2>The “4 Fs”</h2>
+<ul>
+<li>Fighting</li>
+<li>Fleeing</li>
+<li>Feeding</li>
+<li>Mating</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="https://d2gne97vdumgn3.cloudfront.net/api/file/mBcO4PfRMWiAPKuQGXDA" height=600px/></p>
+<!-- Hypothalamus -->
+</section></section>
+<section><section id="nuts-bolts" class="titleslide slide level1"><h1>Nuts &amp; bolts…</h1></section><section id="cells-of-the-nervous-system" class="slide level2">
+<h2>Cells of the nervous system</h2>
+</section><section id="glial-glue-cells" class="slide level2">
+<h2>Glial (“glue”) cells</h2>
+<div class="centered">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/5/56/Human_astrocyte.png"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Human_astrocyte.png" height=500px> </a></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Oligodendendrocytes_in_rat_brain.tif/lossy-page1-800px-Oligodendendrocytes_in_rat_brain.tif.jpg"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Oligodendendrocytes_in_rat_brain.tif/lossy-page1-800px-Oligodendendrocytes_in_rat_brain.tif.jpg" height=600px> </a></p>
+</div>
+</section><section id="neurons" class="slide level2">
+<h2>Neurons</h2>
+<div class="centered">
+<p><a href="http://www.extremetech.com/wp-content/uploads/2012/03/a-mouse-hippocampus-640x353.jpg"> <img src="http://www.extremetech.com/wp-content/uploads/2012/03/a-mouse-hippocampus-640x353.jpg" height=550px/> </a></p>
+</div>
+<!-- Mouse hippocampus -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://static.scientificamerican.com/sciam/cache/file/52B19135-A87E-4900-8787C55A19925989_source.jpg?w=590&h=800&4482D8A9-1F12-45E6-8466C64DBDD4C9C3" height=550px> </a></p>
+</div>
+<p><small><a href="https://www.scientificamerican.com/article/does-the-adult-brain-really-grow-new-neurons/">Shen 2015</a></small></p>
+</section><section class="slide level2">
+
+<p><img src="http://east.zornitsadesign.netdna-cdn.com/wp-content/uploads/2016/03/Brainbow-Hippocampus-rainbow-colors-large.jpg" height=550px/></p>
+<p><a href="http://www.gregadunn.com">Greg Dunn Designs</a></p>
+</section><section id="fun-facts-about-neurons" class="slide level2">
+<h2>Fun facts about <a href="https://en.wikipedia.org/wiki/Neuron">neurons</a></h2>
+<ul>
+<li>Most <a href="http://www.ninds.nih.gov/disorders/brain_basics/ninds_neuron.htm">born early in life</a></li>
+<li>Post-mitotic – don’t divide</li>
+<li>Among longest-lived cells in body</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Can extend over long distances</li>
+<li>Specialized for electrical &amp; chemical communication</li>
+</ul>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://i.stack.imgur.com/kfriB.jpg" height=450px/></p>
+</div>
+<!-- Schematic neuron showing information flow -->
+</section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/H0K2dvB-7WY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</section><section id="neurons-release-neurotransmitters" class="slide level2">
+<h2>Neurons release neurotransmitters</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://www.proprofs.com/quiz-school/topic_images/p1bsmqh6un6sdfto1f8m1184nr83.jpg" height=450px/></p>
+</div>
+</section><section id="monoamine-song" class="slide level2">
+<h2>Monoamine Song</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gsjcb7w1Y-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><small><a href="https://www.youtube.com/watch?v=gsjcb7w1Y-w" class="uri">https://www.youtube.com/watch?v=gsjcb7w1Y-w</a></small> <small><a href="https://en.wikipedia.org/wiki/Mah_Nà_Mah_Nà" class="uri">https://en.wikipedia.org/wiki/Mah_Nà_Mah_Nà</a></small></p>
+</section><section class="slide level2">
+
+<p>￼Monoamines, do-do do do-do</br> Monoamines, do do do-do</br> Monoamines, do do do do-do do do-do do do-do do do do do-do do</p>
+</section><section class="slide level2">
+
+<p>￼Monoamines, do-pa-mine is one</br> Monoamines, norepi, too</br> Monoamines, sero-tonin e-pinephrine, dop-a- mine, nor-epinephrine, melatonin, whoo!</p>
+</section><section class="slide level2">
+
+<p>Monoamines, mod-u-late neurons </br> Monoamines, throughout the brain</br> Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do do-do do</p>
+</section><section class="slide level2">
+
+<ul>
+<li>Nicotine</li>
+<li>Alcohol</li>
+<li>Valium</li>
+<li>Prozac</li>
+<li>Opioids</li>
+<li>Marijuana</li>
+</ul>
+</section><section id="substances-of-use-and-abuse-often-mimic-or-alter-neurotransmitters" class="slide level2">
+<h2>Substances of use and abuse often mimic or alter neurotransmitters</h2>
+</section></section>
+<section><section id="how-did-it-get-here" class="titleslide slide level1"><h1>How did it get here?</h1></section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://cdn.spacetelescope.org/archives/images/large/heic0916a.jpg" height=600px></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif"> <img src="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif" height=600px> </a></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif"> <img src="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif" height=600px> </a></p>
+</div>
+</section><section id="the-cambrian-explosion" class="slide level2">
+<h2>The Cambrian explosion</h2>
+<p><img src="https://www.nature.com/polopoly_fs/7.34097.1455557253!/image/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg_gen/derivatives/landscape_630/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg" height=500px/></p>
+</section><section id="behavior-requires" class="slide level2">
+<h2>Behavior requires…</h2>
+<ul>
+<li>Energy</li>
+<li>Perception at a distance</li>
+<li>Action</li>
+</ul>
+</section><section id="action-requires" class="slide level2">
+<h2>Action requires…</h2>
+<ul>
+<li>Perception</li>
+<li>Problem solving</li>
+<li>Sequence planning</li>
+<li>Current state + stored information (memory)</li>
+</ul>
+</section><section id="evolving-brains" class="slide level2">
+<h2>Evolving brains</h2>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="img/nrn.2015.15-f1.jpg" height=550px></p>
+<p><small><a href="http://doi.org/10.1038/nrn.2015.15">Arendt 2016</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="img/nrn.2015.15-f2.jpg" height=550px></p>
+<p><small><a href="http://doi.org/10.1038/nrn.2015.15">Arendt 2016</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://icb.oxfordjournals.org/content/42/4/743/F2.large.jpg"> <img src="img/northcutt-2002-f1.gif" height=550px> </a></p>
+<p><small>(Northcutt 2002)</small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://icb.oxfordjournals.org/content/42/4/743/F2.large.jpg"> <img src="img/northcutt-2002-f2.gif" height=550px> </a></p>
+<p><small>(Northcutt 2002)</small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg"> <img src="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg" height=600px> </a></p>
+</div>
+</section><section id="does-size-matter" class="slide level2">
+<h2>Does size matter?</h2>
+</section><section class="slide level2">
+
+<p><img src="http://s3v.computerhistory.org/102695698-03-01.jpg?" height=300px> <img src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-462x322.jpg" height=300px></p>
+</section><section class="slide level2">
+
+<table>
+<thead>
+<tr class="header">
+<th>Species</th>
+<th># cortical neurons</th>
+<th>cortical mass (g)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Human</td>
+<td>16 B</td>
+<td>1233</td>
+</tr>
+<tr class="even">
+<td>Chimpanzee</td>
+<td>6 B</td>
+<td>286</td>
+</tr>
+<tr class="odd">
+<td>Elephant</td>
+<td>5.6 B</td>
+<td>2800</td>
+</tr>
+<tr class="even">
+<td>Baboon</td>
+<td>2.9 B</td>
+<td>120.2</td>
+</tr>
+</tbody>
+</table>
+</section><section class="slide level2">
+
+<p><img src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="768" /></p>
+<pre><code>## List of 4
+##  $ axis.title  :List of 11
+##   ..$ family       : NULL
+##   ..$ face         : NULL
+##   ..$ colour       : NULL
+##   ..$ size         : num 36
+##   ..$ hjust        : NULL
+##   ..$ vjust        : NULL
+##   ..$ angle        : NULL
+##   ..$ lineheight   : NULL
+##   ..$ margin       : NULL
+##   ..$ debug        : NULL
+##   ..$ inherit.blank: logi FALSE
+##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+##  $ axis.text   :List of 11
+##   ..$ family       : NULL
+##   ..$ face         : NULL
+##   ..$ colour       : NULL
+##   ..$ size         : num 24
+##   ..$ hjust        : NULL
+##   ..$ vjust        : NULL
+##   ..$ angle        : NULL
+##   ..$ lineheight   : NULL
+##   ..$ margin       : NULL
+##   ..$ debug        : NULL
+##   ..$ inherit.blank: logi FALSE
+##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+##  $ legend.text :List of 11
+##   ..$ family       : NULL
+##   ..$ face         : NULL
+##   ..$ colour       : NULL
+##   ..$ size         : num 24
+##   ..$ hjust        : NULL
+##   ..$ vjust        : NULL
+##   ..$ angle        : NULL
+##   ..$ lineheight   : NULL
+##   ..$ margin       : NULL
+##   ..$ debug        : NULL
+##   ..$ inherit.blank: logi FALSE
+##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+##  $ legend.title:List of 11
+##   ..$ family       : NULL
+##   ..$ face         : NULL
+##   ..$ colour       : NULL
+##   ..$ size         : num 24
+##   ..$ hjust        : NULL
+##   ..$ vjust        : NULL
+##   ..$ angle        : NULL
+##   ..$ lineheight   : NULL
+##   ..$ margin       : NULL
+##   ..$ debug        : NULL
+##   ..$ inherit.blank: logi FALSE
+##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
+##  - attr(*, &quot;class&quot;)= chr [1:2] &quot;theme&quot; &quot;gg&quot;
+##  - attr(*, &quot;complete&quot;)= logi FALSE
+##  - attr(*, &quot;validate&quot;)= logi TRUE</code></pre>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>…our brain outranks that of other animals not because we are an exception in evolution, but rather because…we hold the largest number of neurons in the cerebral cortex…</em>”</p>
+</blockquote>
+<p><small>Herculano-Houtzel 2016</small></p>
+</section><section class="slide level2">
+
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/41FcpskAqFL._SX331_BO1,204,203,200_.jpg" height=600px/></p>
+</section><section id="developing-brains" class="slide level2">
+<h2>Developing brains</h2>
+</section><section class="slide level2">
+
+<!-- ## Neurulation -->
+<div class="centered">
+<p><a href="http://thebrain.mcgill.ca/flash/i/i_09/i_09_cr/i_09_cr_dev/i_09_cr_dev_2a.jpg"> <img src="http://thebrain.mcgill.ca/flash/i/i_09/i_09_cr/i_09_cr_dev/i_09_cr_dev_2a.jpg" height=550px> </a></p>
+</div>
+</section><section class="slide level2">
+
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Spina-bifida.jpg#/media/File:Spina-bifida.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Spina-bifida.jpg/1200px-Spina-bifida.jpg" alt="Spina-bifida.jpg" height=600px></a>
+</p>
+<!-- Spina bifida -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/radial-glia.jpg"> <img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/radial-glia.jpg" height=550px> </a></p>
+</div>
+<!-- Migration from ventricular zone -->
+</section><section class="slide level2">
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/ZRF-gKZHINk" frameborder="0" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/t-8bxeWqSV4" frameborder="0" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<!-- ## Axon growth cone -->
+<iframe width="666" height="500" src="https://www.youtube.com/embed/Fgmt2RBow0I" frameborder="0" allowfullscreen>
+</iframe>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/synaptic-density-infant.jpg" height=550px></p>
+</div>
+<!-- ## Synaptogenesis -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/huttenlocher.jpg" height=550px></p>
+</div>
+<!-- ## Postnatal patterns of synaptogenesis -->
+</section><section class="slide level2">
+
+<iframe width="666" height="500" src="https://www.youtube.com/embed/atLQVgUwnrY" frameborder="0" allowfullscreen>
+</iframe>
+<!-- Myelination/DTI -->
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" height=450px></p>
+<p><small><a href="http://dx.doi.org/10.1152/physrev.2001.81.2.871">Baumann 200</a></small></p>
+</div>
+<!-- Myelination patterns -->
+</section><section class="slide level2">
+
+<ul>
+<li>Extended post-natal development</li>
+<li>Proliferation then pruning</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/51k3f40g1cL._SX343_BO1,204,203,200_.jpg" height=600px/></p>
+<!-- The Evolution of Childhood -->
+</section></section>
+<section><section id="where-is-neuroscience-going" class="titleslide slide level1"><h1>Where is neuroscience going?</h1></section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" height=580px> </br> <small> <a href="http://doi.org/10.1038/533452a">Baker 2016</a> </small></p>
+</div>
+<aside class="notes">
+<p>Nature conducted a survey of some 1,600 scientists in 2016. They were asked this question and a few others. Here are the results.</p>
+</aside>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="https://cdn.shopify.com/s/files/1/0877/5762/products/Rigor_Mortis_1024x1024.jpg?v=1491240110" height=550px/></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" height=500px></p>
+<p><small><a href="http://doi.org/10.1371/journal.pbio.2000797">Szucs &amp; Ioannides 2017</a></small></p>
+</div>
+<aside class="notes">
+<p>As Szucs and Ioannides have shown based on an analysis of more than 10,000 papers in the cognitive neuroscience literature, sample sizes are small, and the probability of false negatives is high, especially for small to medium effect sizes.</p>
+</aside>
+</section><section class="slide level2">
+
+<div class="centered">
+<blockquote>
+<p>“Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.”</p>
+</blockquote>
+<p><small><a href="http://doi.org/10.1371/journal.pbio.2000797">Szucs &amp; Ioannides 2017</a></small></p>
+</div>
+<aside class="notes">
+<p>So, this means that we may not know what we think we know.</p>
+</aside>
+</section><section id="on-the-other-hand" class="slide level2">
+<h2>On the other hand…</h2>
+<p><img src="img/gilmore-diaz-wyble-yarkoni.jpg" height=500px/></p>
+</section><section class="slide level2">
+
+<p><img src="img/openneuro.jpg" height=550px/></p>
+<p><a href="http://openneuro.org" class="uri">http://openneuro.org</a></p>
+</section><section class="slide level2">
+
+<video width="1000" data-autoplay>
+<source src="mov/neurosynth-happy.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p></br> <a href="http://neurosynth.org" class="uri">http://neurosynth.org</a></p>
+</section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/zKyO_AB7aMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<p><a href="http://humanconnectome.org" class="uri">http://humanconnectome.org</a></p>
+</section><section class="slide level2">
+
+<p><img src="img/sleic.jpg" height=500px/></p>
+<p><a href="http://imaging.psu.edu">imaging.psu.edu</a></p>
+</section><section class="slide level2">
+
+<iframe width="850" height="500" src="https://www.youtube.com/embed/og_1dZc1i_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<!-- CLARITY technique -->
+</section><section class="slide level2">
+
+<iframe width="850" height="500" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<!-- Optogenetics -->
+</section><section class="slide level2">
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/KDjWdtDyz5I" frameborder="0" allowfullscreen>
+</iframe>
+<aside class="notes">
+<p>Effects of DBS for Parkinson’s.</p>
+</aside>
+</section><section class="slide level2">
+
+<p><img src="http://cs231n.github.io/assets/cnn/convnet.jpeg"/></p>
+<!-- Convolutional neural networks -->
+</section><section class="slide level2">
+
+<p><img src="https://www.nature.com/polopoly_fs/7.30313.1444731856!/image/Gut-Brain.jpg_gen/derivatives/landscape_630/Gut-Brain.jpg" height=580px/></p>
+<!-- Gut brain/connection -->
+</section></section>
+<section><section id="the-frontier-within-1" class="titleslide slide level1"><h1>The frontier within…</h1></section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg"> <img src="http://www.nature.com/neuro/journal/v17/n11/images/nn.3839-F1.jpg" height="580px"> </a></p>
+<p><small><a href="http://doi.org/10.1038/nn.3839">Sejnowski 2014</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" width=950px> </a></p>
+<p><small><a href="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg">Swanson 2005</a></small></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><img src="img/krakauer.jpg" height=600px/></p>
+</div>
+<p><small>Krakauer 2017</small></p>
+</section><section class="slide level2">
+
+<blockquote>
+<p>“<em>Behavior is the linchpin of the most vexing problems in public health, and a better understanding of behavior is fundamental to achieving positive health outcomes, from prenatal development throughout adulthood.</em>”</p>
+</blockquote>
+<p><small>Gilmore, Adolph, &amp; Tamis-LeMonda, 2019</small></p>
+</section><section class="slide level2">
+
+<div class="centered">
+<p><a href="http://www.apa.org/science/about/psa/2017/10/video-data.aspx"> <img src="img/video-as-data-doc.jpg" height=600px/> </a></p>
+</div>
+</section><section class="slide level2">
+
+<div class="centered">
+<video width="700" data-autoplay>
+<source src="https://nyu.databrary.org/slot/27087/0,79000/asset/119877/download?inline=true" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p><span class="math inline">\(n=900\)</span> 12-, 18-, 24-mo-olds; <span class="math inline">\(n=30\)</span> sites</p>
+</section><section id="a-human-behavior-ome" class="slide level2">
+<h2>A human behavior-ome</h2>
+<video height="600" controls data-autoplay>
+<source src="mov/Construction.mp4" type="video/mp4"> Your browser does not support the video tag.
+</video>
+<p><small><em>Source</em>: Ori Ossmy (NYU)</small></p>
+</section><section class="slide level2">
+
+<p><img src="img/nested-causality.png" height=400px/></p>
+<p><a href="mailto:rogilmore@psu.edu">rogilmore@psu.edu</a></br> <a href="https://gilmore-lab.github.io" class="uri">https://gilmore-lab.github.io</a></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'libs/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
