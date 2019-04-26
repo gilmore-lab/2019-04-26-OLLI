@@ -75,8 +75,8 @@ library(ggplot2)
 - husband & father (2 daughters)
 - backpacker, cyclist, paddler, walker
 - ham radio operator (K3ROG)
-- actor, singer, poet, [blogger](http://rick-gilmore.com)
-- activist (Precinct 26 Board of Elections, State College Borough Transportation Commission)
+- actor, singer, poet, [blogger](http://rick-gilmore.com), banjo-picker
+- community contributor (Precinct 26 Board of Elections, State College Borough Transportation Commission)
 
 # The Frontier Within
 
@@ -914,9 +914,11 @@ Your browser does not support the video tag.
 
 <small>*Source*: Ori Ossmy (NYU)</small>
 
+## Thank you!
+
 ---
 
 <img src="img/nested-causality.png" height=400px/>
 
 rogilmore@psu.edu</br>
-<https://gilmore-lab.github.io>
+<https://gilmore-lab.github.io/2019-04-26-OLLI/>
