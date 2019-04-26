@@ -29,7 +29,17 @@ library(ggplot2)
 
 ---
 
+<iframe width="800" height="500" src="https://www.youtube.com/embed/snO68aJTOpM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<small>1:22</small>
+
+<!-- Pinky and the brain -->
+
+---
+
 <iframe width="800" height="500" src="https://www.youtube.com/embed/JB7jSFeVz1U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<small>3:41</small>
 
 <!-- Ode to the Brain -->
 
@@ -59,6 +69,15 @@ library(ggplot2)
 <img src="img/sleic.jpg" height=150px/></br>
 <img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
 
+---
+
+- developmental neuroscientist, vision scientist, software developer
+- husband & father (2 daughters)
+- backpacker, cyclist, paddler, walker
+- ham radio operator (K3ROG)
+- actor, singer, poet, [blogger](http://rick-gilmore.com)
+- activist (Precinct 26 Board of Elections, State College Borough Transportation Commission)
+
 # The Frontier Within
 
 ## Core questions for science
@@ -80,6 +99,10 @@ library(ggplot2)
 <div class="centered">
 <img src="https://raw.githubusercontent.com/gilmore-lab/sips-2017-databservatory/master/img/psych-harder-1.jpg" height=600px/>
 </div>
+
+---
+
+$\ddot{x} = g sin(\theta)$  
 
 ---
 
@@ -124,7 +147,15 @@ library(ggplot2)
 
 <small>Powers 1973</small>
 
+---
+
+<div class="centered">
+<img src="img/sterling-laughlin-3.2.png" height=600px/>
+</div>
+
 ## Control internal states
+
+---
 
 <div class="centered">
 <img src="https://i.ytimg.com/vi/kAy-03hIfck/maxresdefault.jpg" height=550px/>
@@ -133,6 +164,8 @@ library(ggplot2)
 <!-- Bart Simpson negative feedback loops -->
 
 ## Control external states (behavior)
+
+---
 
 <img src="https://i.ebayimg.com/images/g/d44AAOxygPtSvdPG/s-l1600.jpg"/>
 
@@ -162,10 +195,8 @@ library(ggplot2)
 
 ---
 
-- Perception (what is it/where is it?)
-- Locomotion
-- Object manipulation/consumption
-- Signaling/communication
+- **Perception** (what is it? where is it?)
+- **Action** (locomotion, manipulation, communication)
 
 ## How is the nervous system organized to shape these behaviors?
 
@@ -192,18 +223,20 @@ library(ggplot2)
 <div class="centered">
 <a href="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg"><img src="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg" height=600px>
 </a>
+
+<small>Cajal</small>
 </div>
 
-## Perception -> Cognition -> Action
+## Perception -> Cognition -> Action -> ...
 
----
+<!-- --- -->
 
-- What's out there?
-- Where is it?
-- How am I feeling now?
-- What happened in the past?
-- ...
-- What should I do about it?
+<!-- - What's out there? -->
+<!-- - Where is it? -->
+<!-- - How am I feeling now? -->
+<!-- - What happened in the past? -->
+<!-- - ... -->
+<!-- - What should I do about it? -->
 
 ---
 
@@ -213,7 +246,16 @@ library(ggplot2)
 
 ---
 
-## Spatial & temporal scales
+## Minimize energy
+
+<div class="centered">
+<img src="https://images.homedepot-static.com/productImages/67748b09-4a03-4527-90de-bad6ec1c68c2/svn/meridian-led-bulbs-13182-64_1000.jpg" height=300px/>
+</div>
+
+- ~2% of body's mass
+- Consumes 20% of body's energy
+
+## Compute across spatial & temporal scales
 
 ---
 
@@ -229,12 +271,7 @@ library(ggplot2)
 
 > "*If understanding everything you needed to know about the brain is a mile, how far have we walked?*"
 
----
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<small>J. Lichtman</small>
-<!-- <https://www.youtube.com/watch?v=nvXuq9jRWKE&feature=youtu.be> -->
+<small>[J. Lichtman](https://www.youtube.com/watch?v=nvXuq9jRWKE&feature=youtu.be)</small>
 
 # Inching along...
 
@@ -243,6 +280,12 @@ library(ggplot2)
 <img src="https://d.ibtimes.co.uk/en/full/396102/mummified-body-woman-representative-purposes.jpg?w=630&e=95f85be8612d0edda8a9a74a906d83e9" height=600px/>
 
 <!-- Egyptian mummy -->
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Hieroglyph_brain.svg/640px-Hieroglyph_brain.svg.png" height=400px/>
+
+<!-- Hieroglyphics for brain -->
 
 ## The mind as machine...
 
@@ -276,7 +319,7 @@ library(ggplot2)
 ---
 
 <div class="centered">
-<img src="img/powers-6.1.png" height=500px/>
+<img src="img/powers-6.1.png" height=550px/>
 </div>
 
 <small>Powers 1973</small>
@@ -308,10 +351,6 @@ library(ggplot2)
 - Functionally specialized components
 
 # Learning some of the parts
-
----
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/snO68aJTOpM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Brain anatomy through dance
 
@@ -351,6 +390,12 @@ library(ggplot2)
 <img src="https://d2gne97vdumgn3.cloudfront.net/api/file/mBcO4PfRMWiAPKuQGXDA" height=600px/>
 
 <!-- Hypothalamus -->
+
+---
+
+<img src="https://qph.fs.quoracdn.net/main-qimg-23db8e896abce85663e48686b0354ede.webp" height=600px/>
+
+<!-- Sensory and motor cortex -->
 
 # Nuts & bolts...
 
@@ -406,7 +451,8 @@ library(ggplot2)
 ---
 
 - Can extend over long distances
-- Specialized for electrical & chemical communication
+- Specialized for electrical (fast, expensive) & chemical communication (slow, cheap)
+- 'Spikes' or action potentials consume 20% of brain's energy
 
 ---
 
@@ -492,18 +538,17 @@ Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do
 
 <img src="https://www.nature.com/polopoly_fs/7.34097.1455557253!/image/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg_gen/derivatives/landscape_630/HIRES_NaturalHistoryMuseum_PictureLibrary_CMYK.jpg" height=500px/>
 
-## Behavior requires...
+<!-- ## Behavior requires... -->
 
-- Energy
-- Perception at a distance
-- Action
+<!-- - Perception -->
+<!-- - Action -->
 
-## Action requires...
+<!-- ## Action requires... -->
 
-- Perception
-- Problem solving
-- Sequence planning
-- Current state + stored information (memory)
+<!-- - Perception -->
+<!-- - Problem solving -->
+<!-- - Sequence planning -->
+<!-- - Current state + stored information (memory) -->
 
 ## Evolving brains
 
@@ -530,7 +575,7 @@ Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do
 <img src="img/northcutt-2002-f1.gif" height=550px>
 </a>
 
-<small>(Northcutt 2002)</small>
+<small>Northcutt 2002</small>
 </div>
 
 ---
@@ -540,7 +585,7 @@ Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do
 <img src="img/northcutt-2002-f2.gif" height=550px>
 </a>
 
-<small>(Northcutt 2002)</small>
+<small>Northcutt 2002</small>
 </div>
 
 ---
@@ -569,12 +614,12 @@ Monoamines, keep people happy, brains snappy, not sleepy, not sappy, do-do do-do
 
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+```{r, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 brain <- data.frame(species = c('human', 'chimpanzee', 'elephant', 'baboon'),
                     neurons = c(16, 6, 5.6, 2.9),
                     mass = c(1233, 286, 2800, 120.2))
 
-brain %>% 
+brain_fig <- brain %>% 
   ggplot(.) +
   aes(x = neurons, y = mass, color = species) +
   geom_point(size = 4) +
@@ -586,9 +631,19 @@ brain %>%
         axis.title = element_text(size = 36))
 ```
 
+```{r}
+brain_fig
+```
+
 ---
 
-> "*...our brain outranks that of other animals not because we are an exception in evolution, but rather because...we hold the largest number of neurons in the cerebral cortex...*"
+> "*...our brain outranks that of other animals not because we are an exception in evolution...*"
+
+<small>Herculano-Houtzel 2016</small>
+
+---
+
+> "*...but rather because...we hold the largest number of neurons in the cerebral cortex...*"
 
 <small>Herculano-Houtzel 2016</small>
 
@@ -642,7 +697,7 @@ brain %>%
 
 
 <div class="centered">
-<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/synaptic-density-infant.jpg" height=550px>
+<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/synaptic-density-infant.jpg" height=600px>
 </div>
 
 <!-- ## Synaptogenesis -->
@@ -650,7 +705,7 @@ brain %>%
 ---
 
 <div class="centered">
-<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/huttenlocher.jpg" height=550px>
+<img src="https://rawgit.com/psu-psychology/psy-511-scan-fdns/master/lectures/img/huttenlocher.jpg" height=600px>
 </div>
 
 <!-- ## Postnatal patterns of synaptogenesis -->
@@ -664,17 +719,17 @@ brain %>%
 ---
 
 <div class="centered">
-<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" height=450px>
+<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" height=550px>
 
-<small>[Baumann 200](http://dx.doi.org/10.1152/physrev.2001.81.2.871)</small>
+<small>[Baumann 2000](http://dx.doi.org/10.1152/physrev.2001.81.2.871)</small>
 </div>
 
 <!-- Myelination patterns -->
 
 ---
 
-- Extended post-natal development
 - Proliferation then pruning
+- Extended post-natal development
 
 ---
 
@@ -822,7 +877,13 @@ Effects of DBS for Parkinson's.
 
 ---
 
->"*Behavior is the linchpin of the most vexing problems in public health, and a better understanding of behavior is fundamental to achieving positive health outcomes, from prenatal development throughout adulthood.*"
+>"*Behavior is the linchpin of the most vexing problems in public health...*"
+
+<small>Gilmore, Adolph, & Tamis-LeMonda, 2019</small>
+
+---
+
+>"*...and a better understanding of behavior is fundamental to achieving positive health outcomes, from prenatal development throughout adulthood.*"
 
 <small>Gilmore, Adolph, & Tamis-LeMonda, 2019</small>
 
